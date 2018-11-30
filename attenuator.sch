@@ -1,0 +1,1063 @@
+EESchema Schematic File Version 4
+LIBS:attenuator-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Attenuator Board"
+Date "2018-09-22"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Relay:G5V-2 K1
+U 1 1 5BA1F534
+P 2150 1950
+F 0 "K1" V 2917 1950 50  0000 C CNN
+F 1 "G5V-2" V 2826 1950 50  0000 C CNN
+F 2 "Relays_THT:Relay_DPDT_Omron_G5V-2" H 2800 1900 50  0001 L CNN
+F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_2.pdf" H 1950 1950 50  0001 C CNN
+	1    2150 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 74xx:74HC595 U2
+U 1 1 5BA1F649
+P 5950 4700
+F 0 "U2" V 6200 5250 50  0000 L CNN
+F 1 "74HC595" V 6100 5250 50  0000 L CNN
+F 2 "Housings_DIP:DIP-16_W7.62mm" H 5950 4700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 5950 4700 50  0001 C CNN
+	1    5950 4700
+	0    1    -1   0   
+$EndComp
+$Comp
+L Transistor_Array:ULN2003A U1
+U 1 1 5BA1F705
+P 6150 3600
+F 0 "U1" V 6196 4130 50  0000 L CNN
+F 1 "ULN2003A" V 6105 4130 50  0000 L CNN
+F 2 "Housings_DIP:DIP-16_W7.62mm" H 6200 3050 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/uln2003a.pdf" H 6250 3400 50  0001 C CNN
+	1    6150 3600
+	0    1    -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J4
+U 1 1 5BA1F856
+P 5850 5550
+F 0 "J4" V 6003 5263 50  0000 R CNN
+F 1 "Conn_01x04_Male" V 5912 5263 50  0000 R CNN
+F 2 "Connectors_Molex:Molex_KK-6410-04_04x2.54mm_Straight" H 5850 5550 50  0001 C CNN
+F 3 "~" H 5850 5550 50  0001 C CNN
+	1    5850 5550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J3
+U 1 1 5BA1FA6A
+P 1600 3400
+F 0 "J3" H 1706 3578 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 1706 3487 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-02_02x2.54mm_Straight" H 1600 3400 50  0001 C CNN
+F 3 "~" H 1600 3400 50  0001 C CNN
+	1    1600 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J2
+U 1 1 5BA1FB54
+P 10750 1000
+F 0 "J2" H 10723 1023 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 10723 932 50  0000 R CNN
+F 2 "Connectors_Molex:Molex_KK-6410-03_03x2.54mm_Straight" H 10750 1000 50  0001 C CNN
+F 3 "~" H 10750 1000 50  0001 C CNN
+	1    10750 1000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J1
+U 1 1 5BA1FC47
+P 850 1000
+F 0 "J1" H 956 1278 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 956 1187 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-03_03x2.54mm_Straight" H 850 1000 50  0001 C CNN
+F 3 "~" H 850 1000 50  0001 C CNN
+	1    850  1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5BA1FD90
+P 2150 900
+F 0 "R1" V 1943 900 50  0000 C CNN
+F 1 "R" V 2034 900 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 2080 900 50  0001 C CNN
+F 3 "~" H 2150 900 50  0001 C CNN
+	1    2150 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R19
+U 1 1 5BA1FE47
+P 1450 2000
+F 0 "R19" H 1350 2150 50  0000 C CNN
+F 1 "R" H 1350 2250 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 1380 2000 50  0001 C CNN
+F 3 "~" H 1450 2000 50  0001 C CNN
+	1    1450 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5BA1FF16
+P 2150 1050
+F 0 "R7" V 2300 1250 50  0000 C CNN
+F 1 "R" V 2200 1250 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 2080 1050 50  0001 C CNN
+F 3 "~" H 2150 1050 50  0001 C CNN
+	1    2150 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 5BA2001E
+P 1350 1600
+F 0 "R13" H 1500 1550 50  0000 R CNN
+F 1 "R" H 1500 1650 50  0000 R CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 1280 1600 50  0001 C CNN
+F 3 "~" H 1350 1600 50  0001 C CNN
+	1    1350 1600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2450 1550 2600 1550
+Wire Wire Line
+	2450 1950 2650 1950
+$Comp
+L power:GND #PWR0101
+U 1 1 5BA204A9
+P 1350 2400
+F 0 "#PWR0101" H 1350 2150 50  0001 C CNN
+F 1 "GND" H 1355 2227 50  0000 C CNN
+F 2 "" H 1350 2400 50  0001 C CNN
+F 3 "" H 1350 2400 50  0001 C CNN
+	1    1350 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 1550 2600 1050
+Wire Wire Line
+	2600 1050 2300 1050
+Wire Wire Line
+	2000 1050 1600 1050
+Wire Wire Line
+	1600 1050 1600 1650
+Wire Wire Line
+	1600 1650 1850 1650
+Wire Wire Line
+	1350 1450 1850 1450
+Wire Wire Line
+	1350 1750 1350 2350
+Wire Wire Line
+	1350 2350 1450 2350
+Wire Wire Line
+	2300 900  2650 900 
+Wire Wire Line
+	2650 900  2650 1950
+Wire Wire Line
+	2000 900  1550 900 
+Wire Wire Line
+	1550 900  1550 2050
+Wire Wire Line
+	1550 2050 1850 2050
+Wire Wire Line
+	1450 1850 1850 1850
+Wire Wire Line
+	1450 2150 1450 2350
+Wire Wire Line
+	1350 2350 1350 2400
+Connection ~ 1350 2350
+$Comp
+L Relay:G5V-2 K2
+U 1 1 5BA2D134
+P 3700 1950
+F 0 "K2" V 4467 1950 50  0000 C CNN
+F 1 "G5V-2" V 4376 1950 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_Omron_G5V-2" H 4350 1900 50  0001 L CNN
+F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_2.pdf" H 3500 1950 50  0001 C CNN
+	1    3700 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5BA2D13B
+P 3700 900
+F 0 "R2" V 3493 900 50  0000 C CNN
+F 1 "R" V 3584 900 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 3630 900 50  0001 C CNN
+F 3 "~" H 3700 900 50  0001 C CNN
+	1    3700 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R20
+U 1 1 5BA2D142
+P 3000 2000
+F 0 "R20" H 2900 2150 50  0000 C CNN
+F 1 "R" H 2900 2250 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 2930 2000 50  0001 C CNN
+F 3 "~" H 3000 2000 50  0001 C CNN
+	1    3000 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5BA2D149
+P 3700 1050
+F 0 "R8" V 3850 1250 50  0000 C CNN
+F 1 "R" V 3750 1250 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 3630 1050 50  0001 C CNN
+F 3 "~" H 3700 1050 50  0001 C CNN
+	1    3700 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 5BA2D150
+P 2900 1600
+F 0 "R14" H 3050 1550 50  0000 R CNN
+F 1 "R" H 3050 1650 50  0000 R CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 2830 1600 50  0001 C CNN
+F 3 "~" H 2900 1600 50  0001 C CNN
+	1    2900 1600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4000 1550 4150 1550
+Wire Wire Line
+	4000 1950 4200 1950
+$Comp
+L power:GND #PWR0102
+U 1 1 5BA2D159
+P 2900 2400
+F 0 "#PWR0102" H 2900 2150 50  0001 C CNN
+F 1 "GND" H 2905 2227 50  0000 C CNN
+F 2 "" H 2900 2400 50  0001 C CNN
+F 3 "" H 2900 2400 50  0001 C CNN
+	1    2900 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 1550 4150 1050
+Wire Wire Line
+	4150 1050 3850 1050
+Wire Wire Line
+	3550 1050 3150 1050
+Wire Wire Line
+	3150 1050 3150 1650
+Wire Wire Line
+	3150 1650 3400 1650
+Wire Wire Line
+	2900 1450 3400 1450
+Wire Wire Line
+	2900 1750 2900 2350
+Wire Wire Line
+	2900 2350 3000 2350
+Wire Wire Line
+	3850 900  4200 900 
+Wire Wire Line
+	4200 900  4200 1950
+Wire Wire Line
+	3550 900  3100 900 
+Wire Wire Line
+	3100 900  3100 2050
+Wire Wire Line
+	3100 2050 3400 2050
+Wire Wire Line
+	3000 1850 3400 1850
+Wire Wire Line
+	3000 2150 3000 2350
+Wire Wire Line
+	2900 2350 2900 2400
+Connection ~ 2900 2350
+$Comp
+L Relay:G5V-2 K3
+U 1 1 5BA2D754
+P 5200 1950
+F 0 "K3" V 5967 1950 50  0000 C CNN
+F 1 "G5V-2" V 5876 1950 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_Omron_G5V-2" H 5850 1900 50  0001 L CNN
+F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_2.pdf" H 5000 1950 50  0001 C CNN
+	1    5200 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5BA2D75B
+P 5200 900
+F 0 "R3" V 4993 900 50  0000 C CNN
+F 1 "R" V 5084 900 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 5130 900 50  0001 C CNN
+F 3 "~" H 5200 900 50  0001 C CNN
+	1    5200 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R21
+U 1 1 5BA2D762
+P 4500 2000
+F 0 "R21" H 4400 2150 50  0000 C CNN
+F 1 "R" H 4400 2250 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 4430 2000 50  0001 C CNN
+F 3 "~" H 4500 2000 50  0001 C CNN
+	1    4500 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5BA2D769
+P 5200 1050
+F 0 "R9" V 5350 1250 50  0000 C CNN
+F 1 "R" V 5250 1250 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 5130 1050 50  0001 C CNN
+F 3 "~" H 5200 1050 50  0001 C CNN
+	1    5200 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 5BA2D770
+P 4400 1600
+F 0 "R15" H 4550 1550 50  0000 R CNN
+F 1 "R" H 4550 1650 50  0000 R CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 4330 1600 50  0001 C CNN
+F 3 "~" H 4400 1600 50  0001 C CNN
+	1    4400 1600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5500 1550 5650 1550
+Wire Wire Line
+	5500 1950 5700 1950
+$Comp
+L power:GND #PWR0103
+U 1 1 5BA2D779
+P 4400 2400
+F 0 "#PWR0103" H 4400 2150 50  0001 C CNN
+F 1 "GND" H 4405 2227 50  0000 C CNN
+F 2 "" H 4400 2400 50  0001 C CNN
+F 3 "" H 4400 2400 50  0001 C CNN
+	1    4400 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 1550 5650 1050
+Wire Wire Line
+	5650 1050 5350 1050
+Wire Wire Line
+	5050 1050 4650 1050
+Wire Wire Line
+	4650 1050 4650 1650
+Wire Wire Line
+	4650 1650 4900 1650
+Wire Wire Line
+	4400 1450 4900 1450
+Wire Wire Line
+	4400 1750 4400 2350
+Wire Wire Line
+	4400 2350 4500 2350
+Wire Wire Line
+	5350 900  5700 900 
+Wire Wire Line
+	5700 900  5700 1950
+Wire Wire Line
+	5050 900  4600 900 
+Wire Wire Line
+	4600 900  4600 2050
+Wire Wire Line
+	4600 2050 4900 2050
+Wire Wire Line
+	4500 1850 4900 1850
+Wire Wire Line
+	4500 2150 4500 2350
+Wire Wire Line
+	4400 2350 4400 2400
+Connection ~ 4400 2350
+$Comp
+L Relay:G5V-2 K4
+U 1 1 5BA2E2F2
+P 6700 1950
+F 0 "K4" V 7467 1950 50  0000 C CNN
+F 1 "G5V-2" V 7376 1950 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_Omron_G5V-2" H 7350 1900 50  0001 L CNN
+F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_2.pdf" H 6500 1950 50  0001 C CNN
+	1    6700 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5BA2E2F9
+P 6700 900
+F 0 "R4" V 6493 900 50  0000 C CNN
+F 1 "R" V 6584 900 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 6630 900 50  0001 C CNN
+F 3 "~" H 6700 900 50  0001 C CNN
+	1    6700 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R22
+U 1 1 5BA2E300
+P 6000 2000
+F 0 "R22" H 5900 2150 50  0000 C CNN
+F 1 "R" H 5900 2250 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 5930 2000 50  0001 C CNN
+F 3 "~" H 6000 2000 50  0001 C CNN
+	1    6000 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5BA2E307
+P 6700 1050
+F 0 "R10" V 6850 1250 50  0000 C CNN
+F 1 "R" V 6750 1250 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 6630 1050 50  0001 C CNN
+F 3 "~" H 6700 1050 50  0001 C CNN
+	1    6700 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 5BA2E30E
+P 5900 1600
+F 0 "R16" H 6050 1550 50  0000 R CNN
+F 1 "R" H 6050 1650 50  0000 R CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 5830 1600 50  0001 C CNN
+F 3 "~" H 5900 1600 50  0001 C CNN
+	1    5900 1600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7000 1550 7150 1550
+Wire Wire Line
+	7000 1950 7200 1950
+$Comp
+L power:GND #PWR0104
+U 1 1 5BA2E317
+P 5900 2400
+F 0 "#PWR0104" H 5900 2150 50  0001 C CNN
+F 1 "GND" H 5905 2227 50  0000 C CNN
+F 2 "" H 5900 2400 50  0001 C CNN
+F 3 "" H 5900 2400 50  0001 C CNN
+	1    5900 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 1550 7150 1050
+Wire Wire Line
+	7150 1050 6850 1050
+Wire Wire Line
+	6550 1050 6150 1050
+Wire Wire Line
+	6150 1050 6150 1650
+Wire Wire Line
+	6150 1650 6400 1650
+Wire Wire Line
+	5900 1450 6400 1450
+Wire Wire Line
+	5900 1750 5900 2350
+Wire Wire Line
+	5900 2350 6000 2350
+Wire Wire Line
+	6850 900  7200 900 
+Wire Wire Line
+	7200 900  7200 1950
+Wire Wire Line
+	6550 900  6100 900 
+Wire Wire Line
+	6100 900  6100 2050
+Wire Wire Line
+	6100 2050 6400 2050
+Wire Wire Line
+	6000 1850 6400 1850
+Wire Wire Line
+	6000 2150 6000 2350
+Wire Wire Line
+	5900 2350 5900 2400
+Connection ~ 5900 2350
+$Comp
+L Relay:G5V-2 K5
+U 1 1 5BA2F92D
+P 8200 1950
+F 0 "K5" V 8967 1950 50  0000 C CNN
+F 1 "G5V-2" V 8876 1950 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_Omron_G5V-2" H 8850 1900 50  0001 L CNN
+F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_2.pdf" H 8000 1950 50  0001 C CNN
+	1    8200 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5BA2F934
+P 8200 900
+F 0 "R5" V 7993 900 50  0000 C CNN
+F 1 "R" V 8084 900 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 8130 900 50  0001 C CNN
+F 3 "~" H 8200 900 50  0001 C CNN
+	1    8200 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R23
+U 1 1 5BA2F93B
+P 7500 2000
+F 0 "R23" H 7400 2150 50  0000 C CNN
+F 1 "R" H 7400 2250 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 7430 2000 50  0001 C CNN
+F 3 "~" H 7500 2000 50  0001 C CNN
+	1    7500 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5BA2F942
+P 8200 1050
+F 0 "R11" V 8350 1250 50  0000 C CNN
+F 1 "R" V 8250 1250 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 8130 1050 50  0001 C CNN
+F 3 "~" H 8200 1050 50  0001 C CNN
+	1    8200 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 5BA2F949
+P 7400 1600
+F 0 "R17" H 7550 1550 50  0000 R CNN
+F 1 "R" H 7550 1650 50  0000 R CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 7330 1600 50  0001 C CNN
+F 3 "~" H 7400 1600 50  0001 C CNN
+	1    7400 1600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8500 1550 8650 1550
+Wire Wire Line
+	8500 1950 8700 1950
+$Comp
+L power:GND #PWR0105
+U 1 1 5BA2F952
+P 7400 2400
+F 0 "#PWR0105" H 7400 2150 50  0001 C CNN
+F 1 "GND" H 7405 2227 50  0000 C CNN
+F 2 "" H 7400 2400 50  0001 C CNN
+F 3 "" H 7400 2400 50  0001 C CNN
+	1    7400 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 1550 8650 1050
+Wire Wire Line
+	8650 1050 8350 1050
+Wire Wire Line
+	8050 1050 7650 1050
+Wire Wire Line
+	7650 1050 7650 1650
+Wire Wire Line
+	7650 1650 7900 1650
+Wire Wire Line
+	7400 1450 7900 1450
+Wire Wire Line
+	7400 1750 7400 2350
+Wire Wire Line
+	7400 2350 7500 2350
+Wire Wire Line
+	8350 900  8700 900 
+Wire Wire Line
+	8700 900  8700 1950
+Wire Wire Line
+	8050 900  7600 900 
+Wire Wire Line
+	7600 900  7600 2050
+Wire Wire Line
+	7600 2050 7900 2050
+Wire Wire Line
+	7500 1850 7900 1850
+Wire Wire Line
+	7500 2150 7500 2350
+Wire Wire Line
+	7400 2350 7400 2400
+Connection ~ 7400 2350
+$Comp
+L Relay:G5V-2 K6
+U 1 1 5BA315DF
+P 9700 1950
+F 0 "K6" V 10467 1950 50  0000 C CNN
+F 1 "G5V-2" V 10376 1950 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_Omron_G5V-2" H 10350 1900 50  0001 L CNN
+F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_2.pdf" H 9500 1950 50  0001 C CNN
+	1    9700 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5BA315E6
+P 9700 900
+F 0 "R6" V 9493 900 50  0000 C CNN
+F 1 "R" V 9584 900 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 9630 900 50  0001 C CNN
+F 3 "~" H 9700 900 50  0001 C CNN
+	1    9700 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R24
+U 1 1 5BA315ED
+P 9000 2000
+F 0 "R24" H 8900 2150 50  0000 C CNN
+F 1 "R" H 8900 2250 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 8930 2000 50  0001 C CNN
+F 3 "~" H 9000 2000 50  0001 C CNN
+	1    9000 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 5BA315F4
+P 9700 1050
+F 0 "R12" V 9850 1250 50  0000 C CNN
+F 1 "R" V 9750 1250 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 9630 1050 50  0001 C CNN
+F 3 "~" H 9700 1050 50  0001 C CNN
+	1    9700 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 5BA315FB
+P 8900 1600
+F 0 "R18" H 9050 1550 50  0000 R CNN
+F 1 "R" H 9050 1650 50  0000 R CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 8830 1600 50  0001 C CNN
+F 3 "~" H 8900 1600 50  0001 C CNN
+	1    8900 1600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10000 1550 10150 1550
+Wire Wire Line
+	10000 1950 10200 1950
+$Comp
+L power:GND #PWR0106
+U 1 1 5BA31604
+P 8900 2400
+F 0 "#PWR0106" H 8900 2150 50  0001 C CNN
+F 1 "GND" H 8905 2227 50  0000 C CNN
+F 2 "" H 8900 2400 50  0001 C CNN
+F 3 "" H 8900 2400 50  0001 C CNN
+	1    8900 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 1550 10150 1050
+Wire Wire Line
+	10150 1050 9850 1050
+Wire Wire Line
+	9550 1050 9150 1050
+Wire Wire Line
+	9150 1050 9150 1650
+Wire Wire Line
+	9150 1650 9400 1650
+Wire Wire Line
+	8900 1450 9400 1450
+Wire Wire Line
+	8900 1750 8900 2350
+Wire Wire Line
+	8900 2350 9000 2350
+Wire Wire Line
+	9850 900  10200 900 
+Wire Wire Line
+	10200 900  10200 1950
+Wire Wire Line
+	9550 900  9100 900 
+Wire Wire Line
+	9100 900  9100 2050
+Wire Wire Line
+	9100 2050 9400 2050
+Wire Wire Line
+	9000 1850 9400 1850
+Wire Wire Line
+	9000 2150 9000 2350
+Wire Wire Line
+	8900 2350 8900 2400
+Connection ~ 8900 2350
+Wire Wire Line
+	9100 900  8700 900 
+Connection ~ 9100 900 
+Connection ~ 8700 900 
+Wire Wire Line
+	9150 1050 8650 1050
+Connection ~ 9150 1050
+Connection ~ 8650 1050
+Wire Wire Line
+	7600 900  7200 900 
+Connection ~ 7600 900 
+Connection ~ 7200 900 
+Wire Wire Line
+	7150 1050 7650 1050
+Connection ~ 7150 1050
+Connection ~ 7650 1050
+Wire Wire Line
+	5700 900  6100 900 
+Connection ~ 5700 900 
+Connection ~ 6100 900 
+Wire Wire Line
+	6150 1050 5650 1050
+Connection ~ 6150 1050
+Connection ~ 5650 1050
+Wire Wire Line
+	4200 900  4600 900 
+Connection ~ 4200 900 
+Connection ~ 4600 900 
+Wire Wire Line
+	4650 1050 4150 1050
+Connection ~ 4650 1050
+Connection ~ 4150 1050
+Wire Wire Line
+	3100 900  2650 900 
+Connection ~ 3100 900 
+Connection ~ 2650 900 
+Wire Wire Line
+	2600 1050 3150 1050
+Connection ~ 2600 1050
+Connection ~ 3150 1050
+$Comp
+L power:GND #PWR0107
+U 1 1 5BA61B9B
+P 1150 1150
+F 0 "#PWR0107" H 1150 900 50  0001 C CNN
+F 1 "GND" H 1155 977 50  0000 C CNN
+F 2 "" H 1150 1150 50  0001 C CNN
+F 3 "" H 1150 1150 50  0001 C CNN
+	1    1150 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 1100 1150 1100
+Wire Wire Line
+	1150 1100 1150 1150
+Wire Wire Line
+	10550 900  10200 900 
+Connection ~ 10200 900 
+Wire Wire Line
+	10550 1000 10150 1000
+Wire Wire Line
+	10150 1000 10150 1050
+Connection ~ 10150 1050
+$Comp
+L power:GND #PWR0108
+U 1 1 5BA75E50
+P 10450 1150
+F 0 "#PWR0108" H 10450 900 50  0001 C CNN
+F 1 "GND" H 10455 977 50  0000 C CNN
+F 2 "" H 10450 1150 50  0001 C CNN
+F 3 "" H 10450 1150 50  0001 C CNN
+	1    10450 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10550 1100 10450 1100
+Wire Wire Line
+	10450 1100 10450 1150
+Entry Wire Line
+	1850 2700 1950 2800
+Entry Wire Line
+	3400 2700 3500 2800
+Wire Wire Line
+	1850 2350 1850 2700
+Wire Wire Line
+	3400 2350 3400 2700
+Entry Wire Line
+	6150 2800 6250 2900
+Entry Wire Line
+	6250 2800 6350 2900
+Wire Wire Line
+	6350 2900 6350 3200
+Wire Wire Line
+	6250 2900 6250 3200
+Text Label 1850 2650 0    50   ~ 0
+K1
+Text Label 3400 2650 0    50   ~ 0
+K2
+Entry Wire Line
+	4900 2700 5000 2800
+Entry Wire Line
+	6400 2700 6500 2800
+Entry Wire Line
+	7900 2700 8000 2800
+Entry Wire Line
+	9400 2700 9500 2800
+Wire Wire Line
+	9400 2350 9400 2700
+Wire Wire Line
+	7900 2350 7900 2700
+Wire Wire Line
+	6400 2350 6400 2700
+Wire Wire Line
+	4900 2350 4900 2700
+Text Label 4900 2650 0    50   ~ 0
+K3
+Text Label 6400 2650 0    50   ~ 0
+K4
+Text Label 7900 2650 0    50   ~ 0
+K5
+Text Label 9400 2650 0    50   ~ 0
+K6
+Entry Wire Line
+	6050 2800 6150 2900
+Entry Wire Line
+	5950 2800 6050 2900
+Entry Wire Line
+	5850 2800 5950 2900
+Entry Wire Line
+	5750 2800 5850 2900
+Wire Wire Line
+	6150 2900 6150 3200
+Wire Wire Line
+	6050 2900 6050 3200
+Wire Wire Line
+	5950 2900 5950 3200
+Wire Wire Line
+	5850 2900 5850 3200
+Text Label 6350 3050 0    50   ~ 0
+K1
+Text Label 6250 3050 0    50   ~ 0
+K2
+Text Label 6150 3050 0    50   ~ 0
+K3
+Text Label 6050 3050 0    50   ~ 0
+K4
+Text Label 5950 3050 0    50   ~ 0
+K5
+Text Label 5850 3050 0    50   ~ 0
+K6
+Wire Wire Line
+	2450 2350 2900 2350
+Wire Wire Line
+	4000 2350 4400 2350
+Wire Wire Line
+	5500 2350 5900 2350
+Wire Wire Line
+	7000 2350 7400 2350
+Wire Wire Line
+	8500 2350 8900 2350
+Wire Wire Line
+	6350 4000 6350 4300
+Wire Wire Line
+	6250 4300 6250 4000
+Wire Wire Line
+	6150 4000 6150 4300
+Wire Wire Line
+	6050 4000 6050 4300
+Wire Wire Line
+	5850 4000 5850 4300
+Wire Wire Line
+	5950 4000 5950 4300
+$Comp
+L power:+12V #PWR0109
+U 1 1 5BB69ABC
+P 6550 3100
+F 0 "#PWR0109" H 6550 2950 50  0001 C CNN
+F 1 "+12V" H 6565 3273 50  0000 C CNN
+F 2 "" H 6550 3100 50  0001 C CNN
+F 3 "" H 6550 3100 50  0001 C CNN
+	1    6550 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 3100 6550 3200
+$Comp
+L power:GND #PWR0110
+U 1 1 5BB6F6EF
+P 5450 3600
+F 0 "#PWR0110" H 5450 3350 50  0001 C CNN
+F 1 "GND" V 5455 3472 50  0000 R CNN
+F 2 "" H 5450 3600 50  0001 C CNN
+F 3 "" H 5450 3600 50  0001 C CNN
+	1    5450 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 5BB6F7A8
+P 5100 4700
+F 0 "#PWR0111" H 5100 4450 50  0001 C CNN
+F 1 "GND" V 5105 4572 50  0000 R CNN
+F 2 "" H 5100 4700 50  0001 C CNN
+F 3 "" H 5100 4700 50  0001 C CNN
+	1    5100 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5450 3600 5550 3600
+Wire Wire Line
+	5100 4700 5150 4700
+$Comp
+L power:+5V #PWR0112
+U 1 1 5BB7B465
+P 6650 4700
+F 0 "#PWR0112" H 6650 4550 50  0001 C CNN
+F 1 "+5V" V 6665 4828 50  0000 L CNN
+F 2 "" H 6650 4700 50  0001 C CNN
+F 3 "" H 6650 4700 50  0001 C CNN
+	1    6650 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6650 4700 6600 4700
+$Comp
+L Connector:Conn_01x02_Male J5
+U 1 1 5BB81DDF
+P 1600 4000
+F 0 "J5" H 1706 4178 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 1706 4087 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-02_02x2.54mm_Straight" H 1600 4000 50  0001 C CNN
+F 3 "~" H 1600 4000 50  0001 C CNN
+	1    1600 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 5100 6050 5200
+Wire Wire Line
+	6050 5200 6600 5200
+Wire Wire Line
+	6600 5200 6600 4700
+Connection ~ 6600 4700
+Wire Wire Line
+	6600 4700 6550 4700
+Wire Wire Line
+	5450 4300 5450 4250
+Wire Wire Line
+	5450 4250 5200 4250
+Wire Wire Line
+	5200 4250 5200 5250
+Wire Wire Line
+	5200 5250 6050 5250
+Wire Wire Line
+	6050 5250 6050 5350
+Wire Wire Line
+	6350 5100 6350 5300
+Wire Wire Line
+	6150 5100 6150 5150
+Wire Wire Line
+	6150 5150 5950 5150
+Wire Wire Line
+	5950 5150 5950 5350
+Wire Wire Line
+	5750 5100 5150 5100
+Wire Wire Line
+	5150 5100 5150 4700
+Connection ~ 5150 4700
+Wire Wire Line
+	5150 4700 5250 4700
+$Comp
+L power:+12V #PWR0113
+U 1 1 5BA2E7FF
+P 1900 3400
+F 0 "#PWR0113" H 1900 3250 50  0001 C CNN
+F 1 "+12V" V 1915 3528 50  0000 L CNN
+F 2 "" H 1900 3400 50  0001 C CNN
+F 3 "" H 1900 3400 50  0001 C CNN
+	1    1900 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0114
+U 1 1 5BA2E8C3
+P 1900 4000
+F 0 "#PWR0114" H 1900 3850 50  0001 C CNN
+F 1 "+5V" V 1915 4128 50  0000 L CNN
+F 2 "" H 1900 4000 50  0001 C CNN
+F 3 "" H 1900 4000 50  0001 C CNN
+	1    1900 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 5BA2E9AC
+P 1950 4200
+F 0 "#PWR0115" H 1950 3950 50  0001 C CNN
+F 1 "GND" H 1955 4027 50  0000 C CNN
+F 2 "" H 1950 4200 50  0001 C CNN
+F 3 "" H 1950 4200 50  0001 C CNN
+	1    1950 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5BA2EA44
+P 1950 3600
+F 0 "#PWR0116" H 1950 3350 50  0001 C CNN
+F 1 "GND" H 1955 3427 50  0000 C CNN
+F 2 "" H 1950 3600 50  0001 C CNN
+F 3 "" H 1950 3600 50  0001 C CNN
+	1    1950 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 3400 1900 3400
+Wire Wire Line
+	1800 3500 1950 3500
+Wire Wire Line
+	1950 3500 1950 3600
+Wire Wire Line
+	1800 4000 1900 4000
+Wire Wire Line
+	1800 4100 1950 4100
+Wire Wire Line
+	1950 4100 1950 4200
+Wire Wire Line
+	1050 1000 1200 1000
+Wire Wire Line
+	1200 1000 1200 900 
+Wire Wire Line
+	1200 900  1550 900 
+Connection ~ 1550 900 
+Wire Wire Line
+	1050 900  1150 900 
+Wire Wire Line
+	1150 900  1150 1050
+Wire Wire Line
+	1150 1050 1600 1050
+Connection ~ 1600 1050
+$Comp
+L power:GND #PWR0117
+U 1 1 5BACA02D
+P 10100 2400
+F 0 "#PWR0117" H 10100 2150 50  0001 C CNN
+F 1 "GND" H 10105 2227 50  0000 C CNN
+F 2 "" H 10100 2400 50  0001 C CNN
+F 3 "" H 10100 2400 50  0001 C CNN
+	1    10100 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 2350 10100 2350
+Wire Wire Line
+	10100 2350 10100 2400
+Wire Wire Line
+	5850 5100 5850 5350
+Wire Wire Line
+	6350 5300 5750 5300
+Wire Wire Line
+	5750 5300 5750 5350
+Wire Bus Line
+	1650 2800 10400 2800
+$EndSCHEMATC
